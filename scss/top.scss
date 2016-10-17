@@ -1,0 +1,204 @@
+$body-cream: #f6f4ed;
+$body-black: #5b5b5b;
+$body-def:white;
+
+$text-black: #494949;
+$border-grey: #e3e1d7;
+$border-orange: #ff9933;
+$font-size-h3: 1.2vw;
+$font-size-menu: 24px;
+$font-size-sp: 1em;
+$padding-btn:15px;
+// $font: 'Noto Sans Japanese',"メイリオ","Meiryo", serif;
+@media only screen and (max-width: 767px) {
+    #pc-menu {
+        display: none;
+    }
+    h2 {color: $text-black;}
+    h3 {
+        font-size: $font-size-sp;
+    }
+    body {
+        background-color: $body-def;
+        font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif;
+        .header-logo {
+            padding-bottom: $padding-btn;
+            img {
+                width: 200px;
+            }
+        }
+        #contents-header {
+            width: 100%;
+            background-color: rgba(255,255,255,0.8);
+            a {
+                // padding: 25px;
+                padding-left: 0px;
+                padding-right: 0px;
+                span {
+                    color: #71d5d2;
+                    font-size: $font-size-sp;
+                }
+            }
+        }
+        #message-vision {
+            background-color: rgba(255,255,255,0.4);
+            margin-top: 50px;
+            min-height: 240px;
+        }
+        #feature1 {
+            background-color: rgba(255,247,213,0.9);
+            min-height: 240px;
+        }
+
+        #feature2 {
+            background-color: rgba(213,224,241,0.9);
+            min-height: 240px;
+        }
+
+        #feature3 {
+            background-color: rgba(209,241,204,0.9);
+            min-height: 240px;
+        }
+        #feature4,
+        #feature5 {
+            background-color: rgba(255,255,255,0.9);
+            min-height: 240px;
+            width: 50%;
+            float: right;
+        }
+        .feature {
+            padding-right: 0px;
+            padding-left:0px;
+        }
+        .f-bg-img4 {
+            min-height: 240px;
+            background-image: url("/img/bg-img4.jpg");
+        }
+        .non-hov {
+            &:focus {
+                background-color: transparent !important;
+            }
+        }
+
+        .btn-switch {
+            width: 200px;
+        }
+        .img-center {
+            margin:0 auto;
+        }
+        .section-heading {
+            margin: 20px auto;
+            text-align: center;
+            border-bottom: 4px solid #71d5d2;
+        }
+        .map {
+            padding-right: 0px;
+        }
+        .time {
+            padding-left: 0px;
+        }
+        .list-inline {
+            a {
+                color: white;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    #sp-menu {
+        display: none;
+    }
+    h2 {color: $text-black;}
+	body {
+		background-color: $body-def;
+		font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif;
+        .header-logo {
+            padding-bottom: $padding-btn;
+            img {
+                width: 200px;
+            }
+        }
+        #contents-header {
+            width: 100%;
+            min-height: 72px;
+            background-color: rgba(255,255,255,0.8);
+            a {
+                padding: 25px;
+                span {
+                    color: #71d5d2;
+                    font-size: $font-size-menu;
+                }
+            }
+        }
+        #message-vision {
+            background-color: rgba(255,255,255,0.4);
+            margin-top: 50px;
+            min-height: 240px;
+        }
+        #feature1 {
+            background-color: rgba(255,247,213,0.9);
+            min-height: 240px;
+        }
+
+        #feature2 {
+            background-color: rgba(213,224,241,0.9);
+            min-height: 240px;
+        }
+
+        #feature3 {
+            background-color: rgba(209,241,204,0.9);
+            min-height: 240px;
+        }
+        #feature4,
+        #feature5 {
+            background-color: rgba(255,255,255,0.9);
+            min-height: 240px;
+            width: 50%;
+            float: right;
+        }
+        .feature {
+            padding-right: 0px;
+            padding-left:0px;
+        }
+        .f-bg-img4 {
+            min-height: 240px;
+            background-image: url("/img/bg-img4.jpg");
+        }
+        .non-hov {
+            &:focus {
+                background-color: transparent !important;
+            }
+        }
+        .btn-switch {
+            width: 200px;
+        }
+        .img-center {
+            margin:0 auto;
+        }
+        .section-heading {
+            margin: 20px auto;
+            text-align: center;
+            border-bottom: 4px solid #71d5d2;
+        }
+        .map {
+            padding-right: 0px;
+        }
+        .time {
+            padding-left: 0px;
+        }
+        .list-inline {
+            a {
+                color: white;
+            }
+        }
+	}
+
+
+}
+/*ChromeとOperaのみだけに適用されるCSSハック*/
+@media (min-width: 1170px) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+
+}
+
+
