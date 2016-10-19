@@ -7,3 +7,11 @@
 	width:100%;
 	max-width:1260px;
 }
+
+.clinick-address div h4{
+	margin-bottom: 20px;
+}
+
+.clinick-address .clinick-address-letter{
+	margin-bottom: 20px;
+}
