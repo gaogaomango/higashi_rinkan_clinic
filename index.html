@@ -24,178 +24,35 @@
                 margin-top:100px;
             }
         </style>        
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/pjax.js"></script>
-        <script type="text/javascript">
-             //共通パーツ読み込み
-             $(function() {
-                 $("#title").load("header.html");
-                 $("#contentsHeader").load("contentsHeader.html");
-                 $("#footer").load("footer.html");
-             });
-            $(function(){
-                $.pjax({
-                    area: 'main', //入れ替える部分
-                    link : 'a:not([target])'
-                });
-            });
-        </script>
     </head>
     <body>
+        <!-- Header -->
         <div id="title" class="container">
         </div>
-        <!-- Header -->
         <main id="contents">
             <div id="contentsHeader" class="intro-header">
             </div>
-            <!-- /.intro-header -->
             <!-- Page Content -->
-            <section class="container">
-                <h2 class="section-heading">特徴</h2>
-                    <div class=" text-center">
-                        <div class="feature col-md-4">
-                            <div id="feature1">
-                            <h2 class="service-heading">特徴</h2>
-                            <p class="text-muted">虫歯の治療をさせていただいております。<br>できる限り歯を削らず痛くない治療、<br>これが当院のスタンダードです。</p>
-                            </div>
-                        </div>
-                        <div class="feature col-md-4">
-                            <div id="feature2">
-                            <h2 class="service-heading">特徴</h2>
-                            <p class="text-muted">虫歯の治療をさせていただいております。<br>できる限り歯を削らず痛くない治療、<br>これが当院のスタンダードです。</p>
-                            </div>
-                        </div>
-                        <div class="feature col-md-4">
-                            <div id="feature3">
-                            <h2 class="service-heading">特徴</h2>
-                            <p class="text-muted">虫歯の治療をさせていただいております。<br>できる限り歯を削らず痛くない治療、<br>これが当院のスタンダードです。</p>
-                            </div>
-                        </div>
-                        <div class="feature f-bg-img4 col-md-6">
-                            <div id="feature4">
-                            <h2 class="service-heading">特徴</h2>
-                            <p class="text-muted">虫歯の治療をさせていただいております。<br>できる限り歯を削らず痛くない治療、<br>これが当院のスタンダードです。</p>
-                            </div>
-                        </div>
-                        <div class="feature f-bg-img4 col-md-6">
-                            <div id="feature5">
-                            <h2 class="service-heading">特徴</h2>
-                            <p class="text-muted">虫歯の治療をさせていただいております。<br>できる限り歯を削らず痛くない治療、<br>これが当院のスタンダードです。</p>
-                            </div>
-                        </div>
-                    </div>
+            <section id="clinickFeature" class="container">
             </section>
-            <section class="container">
-                <h2 class="section-heading">スタッフ</h2>
-                <div class="">
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                        <h3>スタッフの名前
-                            <small>役職</small>
-                        </h3>
-                    </div>
-                </div>
+            <section id="staffIntroduction" class="container">
             </section>
             <div class="container">
-                <section class="col-lg-6 col-sm-6 time">
-                <h2 class="section-heading">診療時間</h2>
-                <div class="">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>外来診療時間</th>
-                      <th>月</th>
-                      <th>火</th>
-                      <th>水</th>
-                      <th>木</th>
-                      <th>金</th>
-                      <th>土</th>
-                      <th>日</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">10:00~13:00</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">14:00~19:00</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">18:00~21:00</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-                </div>
+                <section id="openTime" class="col-lg-6 col-sm-6 time">
                 </section>
-                <section class="col-lg-6 col-sm-6 map">
-                <h2 class="section-heading">マップ</h2>
-                <div class="row">
-                    <div class="col-lg-12 col-sm-12">
-                        <img src="/img/map.png" width="100%" height="auto">
-                    </div>
-                
-                </div>
+                <section id="clinickMap" class="col-lg-6 col-sm-6 map">
                 </section>
             </div>
-
         </main>
         <!-- Footer -->
         <footer id="footer">
         </footer>
     </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pjax.js"></script>
+    <script src="js/contents.js"></script>
 </html>

@@ -24,146 +24,39 @@
                 margin-top:100px;
             }
         </style>        
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/pjax.js"></script>
-        <script type="text/javascript">
-             //共通パーツ読み込み
-             $(function() {
-                 $("#title").load("header.html");
-                 $("#contentsHeader").load("contentsHeader.html");
-                 $("#footer").load("footer.html");
-             });
-            $(function(){
-                $.pjax({
-                    area: 'main', //入れ替える部分
-                    link : 'a:not([target])'
-                });
-            });
-        </script>
     </head>
     <body>
-    <div id="title" class="container">
-    </div>
-    <!-- Header -->
-    <main id="contents">
-        <div class="intro-header">
-            <nav id="contents-header">
-            <ul id="pc-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="#"><span>特徴</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="#contact"><span>スタッフ</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href=""><span>診療時間</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="#contact"><span>マップ</span></a>
-                </li>
-            </ul>
-            <ul id ="sp-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/feature.html"><span>特徴</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/staff.html"><span>スタッフ</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/office_hour.html"><span>診療時間</span></a>
-                </li>
-                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/map.html"><span>マップ</span></a>
-                </li>
-            </ul>
-            </nav>
-            <div id="message-vision" class="container">
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-message">
-                            <!-- <h1>Landing Page</h1> -->
-                            <h2>「数値関係で困らない仕組み」<br>という資産形成のお手伝いをさせて頂きます</h2>
-                            <hr class="intro-divider">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.container -->
-
+        <div id="title" class="container">
         </div>
-        <!-- /.intro-header -->
+        <!-- Header -->
+        <main id="contents">
+            <div id="contentsHeader" class="intro-header">
+            </div>
+            <div class="container">
+                <section id="openTime" class="col-lg-6 col-sm-6 time">
+                </section>
+                <section id="clinickMap" class="col-lg-6 col-sm-6 map">
+                </section>
+            </div>
+            <script type="text/javascript">
+                 //共通パーツ読み込み
+                 $(document).on('pjax:render',function(){
+                     $("#contentsHeader").load("contents_header.html");
+                     $("#openTime").load("open_time.html");
+                     $("#clinickMap").load("contents_map.html")
+                 });
+            </script>
+        </main>
+        <!-- Footer -->
+        <footer id="footer">
+        </footer>
+    </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <!-- Page Content -->
-        <div class="container">
-            <section class="col-lg-6 col-sm-6 time">
-            <h2 class="section-heading">診療時間</h2>
-            <div class="">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>外来診療時間</th>
-                  <th>月</th>
-                  <th>火</th>
-                  <th>水</th>
-                  <th>木</th>
-                  <th>金</th>
-                  <th>土</th>
-                  <th>日</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">10:00~13:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">14:00~19:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">18:00~21:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-            </section>
-            <section class="col-lg-6 col-sm-6 map">
-            <h2 class="section-heading">マップ</h2>
-            <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <img src="/img/map.png" width="100%" height="auto">
-                </div>
-            </div>
-            </section>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer id="footer">
-    </footer>
-</body>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pjax.js"></script>
+    <script src="js/contents.js"></script>
+
 </html>

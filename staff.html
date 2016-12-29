@@ -24,130 +24,26 @@
                 margin-top:100px;
             }
         </style>        
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/pjax.js"></script>
-        <script type="text/javascript">
-             //共通パーツ読み込み
-             $(function() {
-                 $("#title").load("header.html");
-                 $("#contentsHeader").load("contentsHeader.html");
-                 $("#footer").load("footer.html");
-             });
-            $(function(){
-                $.pjax({
-                    area: 'main', //入れ替える部分
-                    link : 'a:not([target])'
-                });
-            });
-        </script>
     </head>
     <body>
-    <div id="title" class="container">
-    </div>
-<!-- Header -->
-<main id="contents">
-    <div class="intro-header">
-        <nav id="contents-header">
-        <ul id="pc-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#"><span>特徴</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#contact"><span>スタッフ</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href=""><span>診療時間</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#contact"><span>マップ</span></a>
-            </li>
-        </ul>
-        <ul id ="sp-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/feature.html"><span>特徴</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/staff.html"><span>スタッフ</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/office_hour.html"><span>診療時間</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/map.html"><span>マップ</span></a>
-            </li>
-        </ul>
-        </nav>
-        <div id="message-vision" class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <!-- <h1>Landing Page</h1> -->
-                        <h2>「数値関係で困らない仕組み」<br>という資産形成の
-お手伝いをさせて頂きます
-</h2>
-                        <hr class="intro-divider">
-                    </div>
-                </div>
-            </div>
-
+        <div id="title" class="container">
         </div>
-        <!-- /.container -->
+        <!-- Header -->
+        <main id="contents">
+            <div id="contentsHeader" class="intro-header">
+            </div>
+            <section id="staffIntroduction" class="container">
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer id="footer">
+        </footer>
+    </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-    <section class="container">
-        <h2 class="section-heading">スタッフ</h2>
-        <div class="">
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>スタッフの名前
-                    <small>役職</small>
-                </h3>
-            </div>
-        </div>
-    </section>
-
-
-</main>
-    <!-- Footer -->
-    <footer id="footer">
-    </footer></body>
-
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pjax.js"></script>
+    <script src="js/contents.js"></script>
 </html>
