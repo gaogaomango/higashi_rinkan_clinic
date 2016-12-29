@@ -1,224 +1,169 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<head>
+        <title>東林間歯科</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <title>東林間歯科</title>
+        <!-- Custom CSS -->
+        <link href="css/landing-page.css" rel="stylesheet">
+        <link href="css/top.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #main-contents {
+                margin-top:100px;
+            }
+        </style>        
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-    <link href="css/top.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #main-contents {
-        margin-top:100px;
-    }
-</style>
-</head>
-
-<body>
-<!-- Navigation -->
-<!--     <nav class="navbar navbar-default topnav" role="navigation"> -->
-<div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="">
-<!--         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button> -->
-        <a class="navbar-brand header-logo" href="#"><img src="./img/t_logo.png"></a>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/pjax.js"></script>
+        <script type="text/javascript">
+             //共通パーツ読み込み
+             $(function() {
+                 $("#title").load("header.html");
+                 $("#contentsHeader").load("contentsHeader.html");
+                 $("#footer").load("footer.html");
+             });
+            $(function(){
+                $.pjax({
+                    area: 'main', //入れ替える部分
+                    link : 'a:not([target])'
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <div id="title" class="container">
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a class="non-hov" href="#contact"><img class="btn-switch" src="./img/btn_gairai1.png"></a>
-            </li>
-            <li>
-                <a class="non-hov" href="#contact"><img class="btn-switch" src="./img/btn_oshin2.png"></a>
-            </li>
-        </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-</div>
-<!-- /.container -->
-<!--     </nav> -->
-
-
     <!-- Header -->
-<main id="contents">
-    <div class="intro-header">
-        <nav id="contents-header">
-        <ul id="pc-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#"><span>特徴</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#contact"><span>スタッフ</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href=""><span>診療時間</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="#contact"><span>マップ</span></a>
-            </li>
-        </ul>
-        <ul id ="sp-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/feature.html"><span>特徴</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/staff.html"><span>スタッフ</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/office_hour.html"><span>診療時間</span></a>
-            </li>
-            <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <a href="/map.html"><span>マップ</span></a>
-            </li>
-        </ul>
-        </nav>
-        <div id="message-vision" class="container">
+    <main id="contents">
+        <div class="intro-header">
+            <nav id="contents-header">
+            <ul id="pc-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><span>特徴</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="#contact"><span>スタッフ</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href=""><span>診療時間</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="#contact"><span>マップ</span></a>
+                </li>
+            </ul>
+            <ul id ="sp-menu" class="nav navbar-nav col-lg-12 col-md-12　col-xs-12">
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="/feature.html"><span>特徴</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="/staff.html"><span>スタッフ</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="/office_hour.html"><span>診療時間</span></a>
+                </li>
+                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="/map.html"><span>マップ</span></a>
+                </li>
+            </ul>
+            </nav>
+            <div id="message-vision" class="container">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <!-- <h1>Landing Page</h1> -->
-                        <h2>「数値関係で困らない仕組み」<br>という資産形成の
-お手伝いをさせて頂きます
-</h2>
-                        <hr class="intro-divider">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <!-- <h1>Landing Page</h1> -->
+                            <h2>「数値関係で困らない仕組み」<br>という資産形成のお手伝いをさせて頂きます</h2>
+                            <hr class="intro-divider">
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <!-- /.container -->
 
         </div>
-        <!-- /.container -->
+        <!-- /.intro-header -->
 
-    </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-    <div class="container">
-        <section class="col-lg-6 col-sm-6 time">
-        <h2 class="section-heading">診療時間</h2>
-        <div class="">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>外来診療時間</th>
-              <th>月</th>
-              <th>火</th>
-              <th>水</th>
-              <th>木</th>
-              <th>金</th>
-              <th>土</th>
-              <th>日</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">10:00~13:00</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">14:00~19:00</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">18:00~21:00</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-        </section>
-        <section class="col-lg-6 col-sm-6 map">
-        <h2 class="section-heading">マップ</h2>
-        <div class="row">
-            <div class="col-lg-12 col-sm-12">
-                <img src="/img/map.png" width="100%" height="auto">
-            </div>
-        
-        </div>
-        </section>
-    </div>
-
-</main>
-    <!-- Footer -->
-    <footer>
+        <!-- Page Content -->
         <div class="container">
+            <section class="col-lg-6 col-sm-6 time">
+            <h2 class="section-heading">診療時間</h2>
+            <div class="">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>外来診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">10:00~13:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">14:00~19:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">18:00~21:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            </section>
+            <section class="col-lg-6 col-sm-6 map">
+            <h2 class="section-heading">マップ</h2>
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">特徴</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">スタッフ一覧</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">診療時間</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">マップ</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; 東林間歯科 2016. All Rights Reserved</p>
+                <div class="col-lg-12 col-sm-12">
+                    <img src="/img/map.png" width="100%" height="auto">
                 </div>
             </div>
+            </section>
         </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
     </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/pjax.js"></script>
-    <script type="text/javascript">
-$(function(){
-    $.pjax({
-        area: 'main', //入れ替える部分
-        link : 'a:not([target])'
-    });
-});
-    </script>
 </body>
-
 </html>
