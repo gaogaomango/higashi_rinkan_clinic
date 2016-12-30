@@ -29,6 +29,9 @@
                 if($("#clinickAddress")[0] != null){
                     $("#clinickAddress").load("/house_calls/contents_address.html");                
                 }
+                if($("#houseCallsArea")[0] != null){
+                    $("#houseCallsArea").load("/house_calls/contents_area.html");                
+                }
             // 外来
             } else {
                 if($("#contentsHeader")[0] != null){
