@@ -1,15 +1,18 @@
         <h2 class="section-heading">住所</h2>
         <div class=" text-center">
-            <div class="feature col-md-4">
-                <div id="feature1">
-                <h2 class="service-heading">住所</h2>
-                <p class="text-muted">〒111-1111 神奈川県〜〜〜〜〜〜〜</p>
-                </div>
-            </div>
-            <div class="feature col-md-4">
-                <div id="feature2">
-                <h2 class="service-heading">グーグルMAPはこちら</h2>
-                <p class="text-muted"><a href="">グーグルMAPはこちら</a></p>
+            <div class="feature">
+                <div id="">
+                    <p class="text-muted"><a href="maps:q=神奈川県相模原市南区上鶴間5-9-18" class="openmap">〒252-0302 神奈川県相模原市南区上鶴間5-9-18和興東林間ビル2F</a></p>
+                    <p class="text-muted"><a href="maps:saddr=東林間駅&daddr=神奈川県相模原市南区上鶴間5-9-18" class="openmap">東林間駅からMAPで経路を表示</a></p>
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+            if(navigator.userAgent.indexOf('Android') > 0) {
+                $(".openmap").each(function(){
+                   url = $(this).attr("href").replace("maps:","http://maps.google.com?");
+                   $(this).attr("href",url);
+                });
+            }
+        </script>
