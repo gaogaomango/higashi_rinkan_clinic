@@ -24,7 +24,14 @@ h6 {
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/top-img1.png) no-repeat center center;
+  background: url(/img/top-img1.png) no-repeat center center;
+  background-size: cover; }
+
+.intro-header.house_calls-header {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(/img/bg-img4.jpg) no-repeat center center;
   background-size: cover; }
 
 .intro-message {

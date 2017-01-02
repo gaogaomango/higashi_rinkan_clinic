@@ -4,6 +4,7 @@
     margin-top:100px;
 }
 
+/*　スマホメニュー*/
 @media only screen and (max-width: 767px) {
   #pc-menu {
     display: none; 
@@ -68,6 +69,20 @@
     min-height: 240px;
     background-image: url("/img/bg-img4.jpg"); 
   }
+  body .menu-btn {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    display: flex;
+  }
+  body .menu-btn li {
+    width:50%;
+  }
+  body .menu-btn li a, body .menu-btn li img{
+    padding:0;
+    width:100%;
+  }
   body .non-hov:focus {
     background-color: transparent !important; 
   }
@@ -110,8 +125,13 @@
     min-height: 150px; 
   }
 
+  body #footer {
+    padding-bottom: 5em;
+  }
+
 }
 
+/*　PCメニュー*/
 @media only screen and (min-width: 768px) {
   #sp-menu {
     display: none; 
