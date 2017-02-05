@@ -1,239 +1,155 @@
 @charset "UTF-8";
-
-#main-contents {
-    margin-top:100px;
-}
-
-/*　スマホメニュー*/
 @media only screen and (max-width: 767px) {
+  ul.menu-btn {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0px; }
+    ul.menu-btn li {
+      display: inline-block;
+      width: 48%;
+      background-color: transparent !important; }
+  .table {
+    font-size: 11px !important; }
+  section {
+    padding-right: 0px;
+    padding-left: 0px; }
   #pc-menu {
-    display: none; 
-  }
+    display: none; }
   h2 {
-    color: #494949; 
-  }
+    color: #494949; }
   h3 {
-    font-size: 1em; 
-  }
+    font-size: 1em; }
   body {
     background-color: white;
-    font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif; 
-  }
-  body .header-logo {
-    padding-bottom: 15px; 
-  }
-  body .header-logo img {
-    width: 200px; 
-  }
-  body #contents-header {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); 
-  }
-  body #contents-header a {
-    padding-left: 0px;
-    padding-right: 0px; 
-  }
-  body #contents-header a span {
-    color: #71d5d2;
-    font-size: 1em; 
-  }
-  body #message-vision {
-    background-color: rgba(255, 255, 255, 0.4);
-    margin-top: 50px;
-    min-height: 240px; 
-  }
-  body #feature1 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 240px; 
-  }
-  body #feature2 {
-    background-color: rgba(213, 224, 241, 0.9);
-    min-height: 240px; 
-  }
-  body #feature3 {
-    background-color: rgba(209, 241, 204, 0.9);
-    min-height: 240px; 
-  }
-  body #feature4,
-  body #feature5 {
-    background-color: rgba(255, 255, 255, 0.9);
-    min-height: 240px;
-    width: 50%;
-    float: right; 
-  }
-  body .feature {
-    padding-right: 0px;
-    padding-left: 0px; 
-  }
-  body .f-bg-img4 {
-    min-height: 240px;
-    background-image: url("/img/bg-img4.jpg"); 
-  }
-  body .menu-btn {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    z-index: 1000;
-    display: flex;
-  }
-  body .menu-btn li {
-    width:50%;
-  }
-  body .menu-btn li a, body .menu-btn li img{
-    padding:0;
-    width:100%;
-  }
-  body .non-hov:focus {
-    background-color: transparent !important; 
-  }
-  body .btn-switch {
-    width: 200px; 
-  }
-  body .img-center {
-    margin: 0 auto; 
-  }
-  body .section-heading {
-    margin: 20px auto;
-    text-align: center;
-    border-bottom: 4px solid #71d5d2; 
-  }
-  body .map {
-    padding-right: 0px; 
-  }
-  body .time {
-    padding-left: 0px; 
-  }
-  body .list-inline a {
-    color: white; 
-  } 
+    font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif; }
+    body .header-logo {
+      padding-bottom: 15px; }
+      body .header-logo img {
+        width: 160px; }
+    body #contents-header {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8); }
+      body #contents-header a {
+        padding-left: 0px;
+        padding-right: 0px; }
+        body #contents-header a span {
+          color: #71d5d2;
+          font-size: 1em; }
+    body #message-vision {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-top: 50px;
+      min-height: 240px; }
+    body #feature1 {
+      background-color: rgba(255, 247, 213, 0.9);
+      min-height: 240px; }
+    body #feature2 {
+      background-color: rgba(213, 224, 241, 0.9);
+      min-height: 240px; }
+    body #feature3 {
+      background-color: rgba(209, 241, 204, 0.9);
+      min-height: 240px; }
+    body #feature4,
+    body #feature5 {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 240px;
+      width: 50%;
+      float: right; }
+    body .feature {
+      padding-right: 0px;
+      padding-left: 0px; }
+    body .f-bg-img4 {
+      min-height: 240px;
+      background-image: url("/img/bg-img4.jpg"); }
+    body .non-hov {
+      background-color: transparent !important; }
+      body .non-hov:focus {
+        /*background-color: transparent !important;*/ }
+    body .btn-switch {
+      width: 160px; }
+    body .img-center {
+      margin: 0 auto; }
+    body .section-heading {
+      margin: 20px auto;
+      text-align: center;
+      border-bottom: 4px solid #71d5d2; }
+    body .map {
+      padding-left: 0px;
+      padding-right: 0px; }
+    body .time {
+      padding-left: 0px;
+      padding-right: 0px; }
+    body .list-inline a {
+      color: white; }
+    body .logo-top {
+      width: 160px; }
+    body #footer {
+      padding-bottom: 80px; } }
 
-  /*** お申し込みから受診・ケアまでの流れ ***/
-  body #treatmentFlow1 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow2 {
-    background-color: rgba(213, 224, 241, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow3 {
-    background-color: rgba(209, 241, 204, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow4 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 150px; 
-  }
-
-  body #footer {
-    padding-bottom: 5em;
-  }
-
-}
-
-/*　PCメニュー*/
 @media only screen and (min-width: 768px) {
   #sp-menu {
-    display: none; 
-  }
+    display: none; }
   h2 {
-    color: #494949; 
-  }
+    color: #494949; }
   body {
     background-color: white;
-    font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif; 
-  }
-  body .header-logo {
-    padding-bottom: 15px; 
-  }
-  body .header-logo img {
-    width: 200px; 
-  }
-  body #contents-header {
-    width: 100%;
-    min-height: 72px;
-    background-color: rgba(255, 255, 255, 0.8); 
-  }
-  body #contents-header a {
-    padding: 25px; 
-  }
-  body #contents-header a span {
-    color: #71d5d2;
-    font-size: 24px; 
-  }
-  body #message-vision {
-    background-color: rgba(255, 255, 255, 0.4);
-    margin-top: 50px;
-    min-height: 240px; 
-  }
-  body #feature1 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 240px; 
-  }
-  body #feature2 {
-    background-color: rgba(213, 224, 241, 0.9);
-    min-height: 240px; 
-  }
-  body #feature3 {
-    background-color: rgba(209, 241, 204, 0.9);
-    min-height: 240px; 
-  }
-  body #feature4,
-  body #feature5 {
-    background-color: rgba(255, 255, 255, 0.9);
-    min-height: 240px;
-    width: 50%;
-    float: right; 
-  }
-  body .feature {
-    padding-right: 0px;
-    padding-left: 0px; 
-  }
-  body .f-bg-img4 {
-    min-height: 240px;
-    background-image: url("/img/bg-img4.jpg"); 
-  }
-  body .non-hov:focus {
-    background-color: transparent !important; 
-  }
-  body .btn-switch {
-    width: 200px; 
-  }
-  body .img-center {
-    margin: 0 auto; 
-  }
-  body .section-heading {
-    margin: 20px auto;
-    text-align: center;
-    border-bottom: 4px solid #71d5d2; 
-  }
-  body .map {
-    padding-right: 0px; 
-  }
-  body .time {
-    padding-left: 0px; 
-  }
-  body .list-inline a {
-    color: white; 
-  } 
-    /*** お申し込みから受診・ケアまでの流れ ***/
-  body #treatmentFlow1 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow2 {
-    background-color: rgba(213, 224, 241, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow3 {
-    background-color: rgba(209, 241, 204, 0.9);
-    min-height: 150px; 
-  }
-  body #treatmentFlow4 {
-    background-color: rgba(255, 247, 213, 0.9);
-    min-height: 150px; 
-  }
-
-}
+    font-family: 'Noto Sans Japanese',"メイリオ","Meiryo", serif; }
+    body .header-logo {
+      padding-bottom: 15px; }
+      body .header-logo img {
+        width: 200px; }
+    body #contents-header {
+      width: 100%;
+      min-height: 72px;
+      background-color: rgba(255, 255, 255, 0.8); }
+      body #contents-header a {
+        padding: 25px; }
+        body #contents-header a span {
+          color: #71d5d2;
+          font-size: 24px; }
+    body #message-vision {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-top: 50px;
+      min-height: 240px; }
+    body #feature1 {
+      background-color: rgba(255, 247, 213, 0.9);
+      min-height: 240px; }
+    body #feature2 {
+      background-color: rgba(213, 224, 241, 0.9);
+      min-height: 240px; }
+    body #feature3 {
+      background-color: rgba(209, 241, 204, 0.9);
+      min-height: 240px; }
+    body #feature4,
+    body #feature5 {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 240px;
+      width: 50%;
+      float: right; }
+    body .feature {
+      padding-right: 0px;
+      padding-left: 0px; }
+    body .f-bg-img4 {
+      min-height: 240px;
+      background-image: url("/img/bg-img4.jpg"); }
+    body .non-hov {
+      background-color: transparent !important; }
+      body .non-hov:focus {
+        /*background-color: transparent !important;*/ }
+    body .btn-switch {
+      width: 160px; }
+    body .img-center {
+      margin: 0 auto; }
+    body .section-heading {
+      margin: 20px auto;
+      text-align: center;
+      border-bottom: 4px solid #71d5d2; }
+    body .map {
+      padding-right: 0px; }
+    body .time {
+      padding-left: 0px; }
+    body .list-inline a {
+      color: white; } }
 
 /*ChromeとOperaのみだけに適用されるCSSハック*/
