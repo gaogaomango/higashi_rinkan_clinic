@@ -11,6 +11,25 @@ $font-size-sp: 1em;
 $padding-btn:15px;
 // $font: 'Noto Sans Japanese',"メイリオ","Meiryo", serif;
 @media only screen and (max-width: 767px) {
+    ul.menu-btn {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        background-color: rgba(255,255,255,0.8);
+        margin-bottom: 0px;
+        li {
+            display: inline-block;
+            width: 48%;
+            background-color: transparent !important;
+        }
+    }
+    .table {
+        font-size: 11px !important;
+    }
+    section {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
     #pc-menu {
         display: none;
     }
@@ -24,7 +43,7 @@ $padding-btn:15px;
         .header-logo {
             padding-bottom: $padding-btn;
             img {
-                width: 200px;
+                width: 160px;
             }
         }
         #contents-header {
@@ -75,13 +94,14 @@ $padding-btn:15px;
             background-image: url("/img/bg-img4.jpg");
         }
         .non-hov {
+            background-color: transparent !important;
             &:focus {
-                background-color: transparent !important;
+                /*background-color: transparent !important;*/
             }
         }
 
         .btn-switch {
-            width: 200px;
+            width: 160px;
         }
         .img-center {
             margin:0 auto;
@@ -92,15 +112,23 @@ $padding-btn:15px;
             border-bottom: 4px solid #71d5d2;
         }
         .map {
+            padding-left: 0px;
             padding-right: 0px;
         }
         .time {
             padding-left: 0px;
+            padding-right: 0px;
         }
         .list-inline {
             a {
                 color: white;
             }
+        }
+        .logo-top {
+            width: 160px;
+        }
+        #footer {
+            padding-bottom: 80px;
         }
     }
 
@@ -166,12 +194,13 @@ $padding-btn:15px;
             background-image: url("/img/bg-img4.jpg");
         }
         .non-hov {
+            background-color: transparent !important;
             &:focus {
-                background-color: transparent !important;
+                /*background-color: transparent !important;*/
             }
         }
         .btn-switch {
-            width: 200px;
+            width: 160px;
         }
         .img-center {
             margin:0 auto;
