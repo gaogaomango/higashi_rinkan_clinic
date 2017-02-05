@@ -21,8 +21,9 @@
 // 		});
 // });
 
-$("#featureBtn").click(function(){
-	$("html,body").animate({scrollTop:$('#clinickFeature').offset().top});
-	return false;
-});
+// $("#featureBtn").click(function(){
+// 	$("html,body").animate({scrollTop:$('#clinickFeature').offset().top});
+// 	return false;
+// });
 
+// $('.single-item').slick();
