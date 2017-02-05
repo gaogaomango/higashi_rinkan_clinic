@@ -3,9 +3,6 @@
             if($("#title")[0] != null){    
                 $("#title").load("/header.html");
             }
-            if($("#footer")[0] != null){
-                $("#footer").load("/footer.html");                    
-            }
             if($("#clinickMap")[0] != null){
                 $("#clinickMap").load("/contents_map.html")
             }
@@ -32,6 +29,9 @@
                 if($("#houseCallsArea")[0] != null){
                     $("#houseCallsArea").load("/house_calls/contents_area.html");                
                 }
+                if($("#footer")[0] != null){
+                    $("#footer").load("/house_calls/footer.html");                    
+                }
             // 外来
             } else {
                 if($("#contentsHeader")[0] != null){
@@ -42,6 +42,9 @@
                 }
                 if($("#staffIntroduction")[0] != null){
                     $("#staffIntroduction").load("/staff_introduction.html");
+                }
+                if($("#footer")[0] != null){
+                    $("#footer").load("/footer.html");                    
                 }
             }
          }
