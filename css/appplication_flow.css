@@ -48,7 +48,7 @@
 
 
 .service-heading{
-	text-align: left;
+	/*text-align: left;*/
 }
 
 /*　スマホメニュー*/
@@ -57,4 +57,3 @@
 	    font-size: 25px;
 	}
 }
-
