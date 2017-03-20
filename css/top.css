@@ -1,4 +1,26 @@
 @charset "UTF-8";
+#gairai_list a img{
+  content:url("/img/btn-gairai2.png");
+}
+#gairai_list.active a img{
+  content:url("/img/btn-gairai1.png");
+}
+#oshin_list a img{
+  content:url("/img/btn-oshin2.png");
+}
+#oshin_list.active a img{
+  content:url("/img/btn-oshin1.png");
+}
+.house_calls_area.active{
+background-color: #a8e6e4;
+}
+.house_calls_map.active{
+background-color: #a8e6e4;
+}
+.house_calls_list.active{
+background-color: #a8e6e4;
+}
+
 @media only screen and (max-width: 767px) {
   section {
     margin-bottom: 20px;
@@ -33,6 +55,12 @@
   section {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  #sp-menu {
+    padding: 0;
+  }
+  #sp-menu li{
+    padding: 0;
   }
   #pc-menu {
     display: none;
@@ -115,6 +143,16 @@
     min-height: 240px;
     background-image: url("/img/bg-img6.jpg");
   }
+  body ul.contact-information {
+    padding: 10px 15px;
+    float: right;
+  }
+  body ul.contact-information li{
+    float: none;
+  }
+  body ul.contact-information li a{
+    padding: 0;
+  }
   body .non-hov {
     background-color: transparent !important;
   }
@@ -154,6 +192,12 @@
 @media only screen and (min-width: 768px) {
   section {
     margin-bottom: 20px;
+  }
+  #pc-menu {
+    padding: 0;
+  }
+  #pc-menu li{
+    padding: 0;
   }
   #sp-menu {
     display: none;
@@ -230,6 +274,15 @@
     min-height: 240px;
     background-image: url("/img/bg-img6.jpg");
   }
+  body ul.contact-information {
+    padding: 15px;
+  }
+  body ul.contact-information li{
+    float: none;
+  }
+  body ul.contact-information li a{
+    padding: 0;
+  }
   body .non-hov {
     background-color: transparent !important;
   }
@@ -272,6 +325,33 @@
   body #feature5 {
   }
   body .feature {
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  ul.menu-btn {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    margin-left: -15px;
+  }
+  ul.menu-btn li {
+    display: inline-block;
+    width: 48%;
+    background-color: transparent !important;
+  }
+  footer {
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #title {
+    width: 100%;
   }
 }
 
