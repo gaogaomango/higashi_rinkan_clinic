@@ -20,6 +20,9 @@ function loadContents(){
   if($("#openTime")[0] != null){
       $("#openTime").load("/open_time.html");
   }
+  if($("#news")[0] != null){
+      $("#news").load("/news.html");
+  }
 
   var $dir = location.href.split("/");
   var $dir1 = $dir[3];
