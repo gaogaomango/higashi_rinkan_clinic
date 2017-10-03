@@ -21,6 +21,40 @@ background-color: #a8e6e4;
 background-color: #a8e6e4;
 }
 
+/* 円の基本形 */
+.circle_basic {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-flow: column;
+  vertical-align: top;
+}
+/* 円の大きさ */
+.circle_size{
+  width: 25px;
+  height: 25px;
+}
+/* 文字の大きさ */
+.circle_letter {
+  /*font-size: 3em;
+  line-height: 1.5em;*/
+}
+/* 円と文字の色 */
+.circle_border {
+  border: 1px solid;
+}
+
+.circle_discription_box {
+  display: flex;
+  font-size: 10px;
+}
+.circle_discription {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   section {
     margin-bottom: 20px;
@@ -133,7 +167,7 @@ background-color: #a8e6e4;
   }
   body .f-bg-img4 {
     min-height: 240px;
-    background-image: url("/img/bg-img4.jpg");
+    background-image: url("/img/bg-img4.png");
   }
   body .f-bg-img5 {
     min-height: 240px;
@@ -264,7 +298,7 @@ background-color: #a8e6e4;
   }
   body .f-bg-img4 {
     min-height: 240px;
-    background-image: url("/img/bg-img4.jpg");
+    background-image: url("/img/bg-img4.png");
   }
   body .f-bg-img5 {
     min-height: 240px;
