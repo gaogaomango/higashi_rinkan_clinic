@@ -11,6 +11,18 @@
 #oshin_list.active a img{
   content:url("/img/btn-oshin1.png");
 }
+#gairai_list a img::after{
+  content:url("/img/btn-gairai2.png");
+}
+#gairai_list.active a img::after{
+  content:url("/img/btn-gairai1.png");
+}
+#oshin_list a img::after{
+  content:url("/img/btn-oshin2.png");
+}
+#oshin_list.active a img::after{
+  content:url("/img/btn-oshin1.png");
+}
 .house_calls_area.active{
 background-color: #a8e6e4;
 }
@@ -167,7 +179,7 @@ background-color: #a8e6e4;
   }
   body .f-bg-img4 {
     min-height: 240px;
-    background-image: url("/img/bg-img4.png");
+    background-image: url("/img/bg-img4-sp.jpg");
   }
   body .f-bg-img5 {
     min-height: 240px;
@@ -217,6 +229,9 @@ background-color: #a8e6e4;
   }
   body .logo-top {
     width: 160px;
+  }
+  body .header-logo-img {
+    width: 60px;
   }
   body #footer {
     padding-bottom: 80px;
@@ -398,16 +413,16 @@ background-color: #a8e6e4;
 @media only screen and (max-width: 435px) {
   body #feature4,
   body #feature5 {
-    min-height: 280px;
+    min-height: 300px;
   }
   body .f-bg-img4{
-    min-height: 280px;
+    min-height: 300px;
   }
   body .f-bg-img5{
-    min-height: 280px;
+    min-height: 300px;
   }
   body .f-bg-img6{
-    min-height: 280px;
+    min-height: 300px;
   }
   ul.menu-btn {
     margin-left: 0px;
