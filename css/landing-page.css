@@ -44,6 +44,9 @@ h6 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   font-size: 5em; }
 
+.intro-message .intro-title > h2 {
+  font-size: 40px;
+}
 .intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
@@ -57,6 +60,9 @@ h6 {
     padding-bottom: 15%; }
   .intro-message > h1 {
     font-size: 3em; }
+  .intro-message .intro-title > h2 {
+    font-size: 30px;
+  }
   ul.intro-social-buttons > li {
     display: block;
     margin-bottom: 20px;
