@@ -67,6 +67,10 @@ background-color: #a8e6e4;
   margin-left: 5px;
 }
 
+.feature-main-box {
+  display: flex;
+}
+
 @media only screen and (max-width: 767px) {
   section {
     margin-bottom: 20px;
@@ -153,22 +157,22 @@ background-color: #a8e6e4;
   body #feature1 {
     background-color: rgba(255, 247, 213, 0.9);
     min-height: 60px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature2 {
     background-color: rgba(213, 224, 241, 0.9);
     min-height: 60px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature3 {
     background-color: rgba(209, 241, 204, 0.9);
     min-height: 60px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature4,
   body #feature5 {
     background-color: rgba(255, 255, 255, 0.9);
-    min-height: 240px;
+    /* min-height: 240px; */
     width: 50%;
     float: right;
     padding: 0 10px;
@@ -287,22 +291,22 @@ background-color: #a8e6e4;
   body #feature1 {
     background-color: rgba(255, 247, 213, 0.9);
     min-height: 120px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature2 {
     background-color: rgba(213, 224, 241, 0.9);
     min-height: 120px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature3 {
     background-color: rgba(209, 241, 204, 0.9);
     min-height: 120px;
-    padding: 1px 50px;
+    padding: 1px 40px;
   }
   body #feature4,
   body #feature5 {
     background-color: rgba(255, 255, 255, 0.9);
-    min-height: 240px;
+    /* min-height: 240px; */
     width: 50%;
     float: right;
     padding: 0 10px;
@@ -377,6 +381,20 @@ background-color: #a8e6e4;
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .feature-main-box {
+    display: block;
+  }
+  .feature-main-box div {
+    width: 100% !important;
+  }
+  .feature-main-box div img{
+    max-width: 100%;
+  }
+
+}
+
+
 @media only screen and (max-width: 810px) {
   ul.menu-btn {
     position: fixed;
@@ -413,7 +431,7 @@ background-color: #a8e6e4;
 @media only screen and (max-width: 435px) {
   body #feature4,
   body #feature5 {
-    min-height: 300px;
+    /* min-height: 300px; */
   }
   body .f-bg-img4{
     min-height: 300px;
