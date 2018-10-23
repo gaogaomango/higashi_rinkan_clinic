@@ -174,7 +174,7 @@ background-color: #a8e6e4;
     background-color: rgba(254, 254, 254, 0.9);
     /* min-height: 240px; */
     width: 50%;
-    float: right;
+    float: left;
     padding: 0 10px;
   }
   body .feature {
@@ -308,7 +308,7 @@ background-color: #a8e6e4;
     background-color: rgba(254, 254, 254, 0.9);
     /* min-height: 240px; */
     width: 50%;
-    float: right;
+    float: left;
     padding: 0 10px;
   }
   body .feature {
