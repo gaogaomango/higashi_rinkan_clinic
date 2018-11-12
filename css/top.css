@@ -154,6 +154,9 @@ background-color: #a8e6e4;
   body div h3.feature-heading {
     text-align: center;
   }
+  body div h3.feature-heading.feature-heading-top {
+    margin-top: 0;
+  }
   body #feature1 {
     background-color: rgba(255, 247, 213, 0.9);
     min-height: 60px;
@@ -239,6 +242,9 @@ background-color: #a8e6e4;
   }
   body #footer {
     padding-bottom: 80px;
+  }
+  body .text-muted {
+    text-align: initial;
   }
 }
 
@@ -362,6 +368,9 @@ background-color: #a8e6e4;
   body .list-inline a {
     color: white;
   }
+  body .text-muted {
+    text-align: initial;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -379,9 +388,15 @@ background-color: #a8e6e4;
   }
   body .feature {
   }
+  .section-padding {
+    padding-top: 24px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  body div h3.feature-heading.feature-heading-top {
+    margin-top: 0;
+  }
   .feature-main-box {
     display: block;
   }
