@@ -21,7 +21,7 @@
   }
 
   table tr th.table-header {
-    min-width: 3em;
+    min-width: 2em;
     text-align: center;
   }
 
@@ -54,13 +54,13 @@
   }
 
   table .slash-char-row {
-    padding-right: 50%;
+    padding-right: 30%;
     text-align: left;
   }
 
   table .slash-char-col {
     margin-top: -1em;
-    padding-left: 50%;
+    padding-left: 30%;
     text-align: right;
     bottom: 0;
     position: absolute;
