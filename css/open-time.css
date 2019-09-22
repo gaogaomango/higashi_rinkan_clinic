@@ -36,6 +36,10 @@
     vertical-align: middle !important;
   }
 
+  table tr td.table-item-circle {
+    font-size: 18px;
+  }
+
   table .slash {
     padding: 0 !important;
     /* width: 30%; */
