@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 #gairai_list a img {
-  content: url("/img/btn-gairai2.png");
-}
-
-#gairai_list.active a img {
   content: url("/img/btn-gairai1.png");
 }
 
+#gairai_list.active a img {
+  content: url("/img/btn-gairai2.png");
+}
+
 #oshin_list a img {
-  content: url("/img/btn-oshin2.png");
+  content: url("/img/btn-oshin1.png");
 }
 
 #oshin_list.active a img {
-  content: url("/img/btn-oshin1.png");
+  content: url("/img/btn-oshin2.png");
 }
 
 #gairai_list a img::after {
