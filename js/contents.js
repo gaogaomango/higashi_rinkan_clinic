@@ -69,6 +69,9 @@ function loadContents() {
   if ($("#news")[0] != null) {
     $("#news").load("/news.html");
   }
+  if ($("#booking")[0] != null) {
+    $("#booking").load("/contents_booking.html");
+  }
 
   var $dir = location.href.split("/");
   var $dir1 = $dir[3];

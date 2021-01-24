@@ -124,6 +124,15 @@
   margin-bottom: 20px;
 }
 
+div.qrcode-container {
+  padding: 8px;
+}
+
+div.qrcode-container img {
+  display: initial !important;
+  padding: 8px;
+}
+
 @media only screen and (max-width: 767px) {
   section {
     margin-bottom: 20px;
@@ -358,7 +367,6 @@
   .feature_infection_control {
     padding: 4px 16px;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
