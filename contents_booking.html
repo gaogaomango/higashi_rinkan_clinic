@@ -1,0 +1,82 @@
+<h2 class="section-heading">オンライン予約</h2>
+<div class="row">
+  <div class="col-lg-12 col-sm-12 text-center">
+    <div id="qr1-container" class="col-lg-6 col-sm-6 qrcode-container">
+      <div id="qr1"></div>
+      <div>
+        <a href="https://plus.dentamap.jp/apl/netuser/?id=5477" target="_blank" rel="noopener noreferrer">初診・再初診の方</a>
+        </a>
+      </div>
+    </div>
+    <div id="qr2-container" class="col-lg-6 col-sm-6 qrcode-container">
+      <div id="qr2"></div>
+      <div>
+        <a href="https://plus.dentamap.jp/apl/netuser/login.html?id=5477" target="_blank"
+          rel="noopener noreferrer">治療中の方</a>
+        </a>
+      </div>
+    </div>
+    <div id="qr3-container" class="col-lg-6 col-sm-6 qrcode-container">
+      <div id="qr3"></div>
+      <div>
+        <a href="https://plus.dentamap.jp/apl/mobile/?id=5477" target="_blank" rel="noopener noreferrer">初診・再初診の方</a>
+        </a>
+      </div>
+    </div>
+    <div id="qr4-container" class="col-lg-6 col-sm-6 qrcode-container">
+      <div id="qr4"></div>
+      <div>
+        <a href="https://plus.dentamap.jp/apl/mobile/login.html?id=5477" target="_blank"
+          rel="noopener noreferrer">治療中の方</a>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  new QRCode(document.getElementById("qr1"), {
+    text: "https://plus.dentamap.jp/apl/netuser/?id=5477",
+    width: 128,
+    height: 128,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+  new QRCode(document.getElementById("qr2"), {
+    text: "https://plus.dentamap.jp/apl/netuser/login.html?id=5477",
+    width: 128,
+    height: 128,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+  new QRCode(document.getElementById("qr3"), {
+    text: "https://plus.dentamap.jp/apl/mobile/?id=5477",
+    width: 128,
+    height: 128,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+  new QRCode(document.getElementById("qr4"), {
+    text: "https://plus.dentamap.jp/apl/mobile/login.html?id=5477",
+    width: 128,
+    height: 128,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+
+  if (((navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0)
+    && navigator.userAgent.indexOf('Mobile') > 0)
+    || (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0)) {
+    // スマートフォン・タブレット向けの記述
+    $("#qr1-container").hide();
+    $("#qr2-container").hide();
+  } else {
+    // PC向けの記述
+    $("#qr3-container").hide();
+    $("#qr4-container").hide();
+  }
+</script>
