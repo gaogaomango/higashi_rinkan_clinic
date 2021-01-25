@@ -3,7 +3,8 @@
   <div class="feature">
     <div id="">
       <p class="text-muted addr-center">
-        <a href="maps:神奈川県相模原市南区上鶴間5-9-19" class="openmap" target="_blank" rel="noopener noreferrer">〒252-0302
+        <a href="maps:%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E5%8D%97%E5%8C%BA%E4%B8%8A%E9%B6%B4%E9%96%935-9-19"
+          class="openmap" target="_blank" rel="noopener noreferrer">〒252-0302
           神奈川県相模原市南区上鶴間5-9-19 グランK1F</a>
       </p>
       <p class=" text-muted addr-center">
@@ -24,7 +25,7 @@
     $(".openmap-route").each(function () {
       url = $(this)
         .attr("href")
-        .replace("maps:", "https://maps.apple.com/?saddr=東林間駅&daddr=神奈川県相模原市南区上鶴間5-9-19");
+        .replace("maps:", "https://maps.apple.com/?saddr=%E6%9D%B1%E6%9E%97%E9%96%93%E9%A7%85&daddr=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E5%8D%97%E5%8C%BA%E4%B8%8A%E9%B6%B4%E9%96%935-9-19");
       $(this).attr("href", url);
     });
   } else {
@@ -37,7 +38,7 @@
     $(".openmap-route").each(function () {
       url = $(this)
         .attr("href")
-        .replace("maps:", "https://www.google.com/maps/dir/?api=1&origin=東林間駅&destination=神奈川県相模原市南区上鶴間5-9-19");
+        .replace("maps:", "https://www.google.com/maps/dir/?api=1&origin=%E6%9D%B1%E6%9E%97%E9%96%93%E9%A7%85&destination=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E5%8D%97%E5%8C%BA%E4%B8%8A%E9%B6%B4%E9%96%935-9-19");
       $(this).attr("href", url);
     });
   }
